@@ -1,4 +1,4 @@
-This contains a sample client to demo the remote user management service that expose the user store manager as a web service. Basically you can integrate this web service for authentication and do user and role management functions with you application.  This client source can be used as bridge for your application and the web service
+This contains a sample client to demo the remote user management service that expose carbon the user store manager as a web service. You can use this web service for authentication and do user and role management functions. This project contains a web service client source can be used to call this web service.  Also basically as bridge for your own application and the web service.
 
 How to Run Sample
 -----------------
