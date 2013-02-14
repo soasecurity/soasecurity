@@ -27,10 +27,10 @@ import org.wso2.carbon.um.ws.api.stub.RemoteUserStoreManagerServiceStub;
 import java.io.File;
 
 /**
- * This sample client to list user names that is associate with the carbon server.
- * For that you need to call the UserAdmin API in Carbon server.
- * As UserAdmin API is secured one. To call it, you want to pass valid credentials as
- * basic authentication header
+ * This sample client demo user mgt web service API of WSO2 Carbon Server.
+ * You can use both UserAdmin and  RemoteUserStoreManagerService service APIs
+ * As both are secured one. To call them, you want to pass valid credentials as
+ * basic authentication header.
  */
 public class SampleUserRoleMgtClient {
 
@@ -88,7 +88,7 @@ public class SampleUserRoleMgtClient {
             /**
              * end point url with service name
              */
-            String serviceEndPoint = SEVER_URL + "UserAdmin";
+            String serviceEndPoint = SEVER_URL + "RemoteUserStoreManagerService";
 
             /**
              * create stub and service client
