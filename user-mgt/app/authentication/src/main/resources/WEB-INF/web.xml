@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <display-name>WSO2 Authentication Web App</display-name>
+    <description>
+        This is a simple web application for demonstrating user management API of WSO2 Identity Server
+    </description>
+    
+    <servlet>
+        <servlet-name>WSO2AgentServlet</servlet-name>
+        <servlet-class>org.soa.security.sample.authentication.webapp.WSO2AgentServlet</servlet-class>
+        <init-param>
+             <description>serverUrl</description>
+             <param-name>serverUrl</param-name>
+             <param-value>https://localhost:9443/</param-value>
+        </init-param>
+        <init-param>
+             <description>serverUserName</description>
+             <param-name>serverUserName</param-name>
+             <param-value>admin</param-value>
+        </init-param>
+        <init-param>
+             <description>serverPassword</description>
+             <param-name>serverPassword</param-name>
+             <param-value>admin</param-value>
+        </init-param>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+  </web-app>
