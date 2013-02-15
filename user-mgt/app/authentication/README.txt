@@ -11,7 +11,7 @@ How To
 3. Locate web.xml file in the project and configure following according to your WSO2 Identity Server settings 
 
 serverUrl
-serverUserName  -  Admin user that is used authenticated session between Web app and Identity Server
+serverUserName  -  WSO2 Identity Server user (Admin User) that is used to create an authenticate session between Web app and Identity Server
 serverPassword
 
 4. Build project using maven 3
